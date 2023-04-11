@@ -16,10 +16,12 @@ getWeatherBtn.addEventListener('click', () => {
       var kelvinTemp = data.main.temp;
       var celsiusTemp = kelvinTemp - 273.15;
       var fahrenheitTemp = (kelvinTemp - 273.15) * 9/5 + 32;
+      var humidity = data.main.humidity;
+      var windSpeed = data.wind.speed;
       var weatherDescription = data.weather[0].description;
       var cityName = data.name;
 
-      weatherOutput.textContent = `The current temperature in ${cityName} is ${celsiusTemp.toFixed(2)}°C or ${fahrenheitTemp.toFixed(2)}°F, with ${weatherDescription}.`;
+      weatherOutput.innerHTML = `The current temperature in ${cityName} is ${celsiusTemp.toFixed(2)}°C or ${fahrenheitTemp.toFixed(2)}°F, with ${weatherDescription}.<br>Humidity: ${humidity}%<br>Wind speed: ${windSpeed} m/s`;
 
       // Add city to search history
       var searchItem = document.createElement('li');
@@ -40,9 +42,11 @@ getWeatherBtn.addEventListener('click', () => {
         var kelvinTemp = item.main.temp;
         var celsiusTemp = kelvinTemp - 273.15;
         var fahrenheitTemp = (kelvinTemp - 273.15) * 9/5 + 32;
+        var humidity = item.main.humidity;
+        var windSpeed = item.wind.speed;
         var weatherDescription = item.weather[0].description;
 
-        futureWeatherOutputText += `<div>${dayOfWeek}: ${celsiusTemp.toFixed(2)}°C or ${fahrenheitTemp.toFixed(2)}°F, with ${weatherDescription}.</div>`;
+        futureWeatherOutputText += `<div>${dayOfWeek}: ${celsiusTemp.toFixed(2)}°C or ${fahrenheitTemp.toFixed(2)}°F, with ${weatherDescription}.<br>Humidity: ${humidity}%<br>Wind speed: ${windSpeed} m/s</div>`;
       });
 
       futureWeatherOutput.innerHTML = futureWeatherOutputText;
