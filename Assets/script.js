@@ -7,9 +7,12 @@ var searchHistory = document.getElementById('searchHistory');
 var searchHistoryList = document.createElement('ul');
 searchHistory.appendChild(searchHistoryList);
 
+
+// event listner added on button to output weather
 getWeatherBtn.addEventListener('click', () => {
   var city_name = cityInput.value;
 
+  // get todays weather
   fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${api_key}`)
     .then(response => response.json())
     .then(data => {
@@ -51,6 +54,7 @@ getWeatherBtn.addEventListener('click', () => {
 
       futureWeatherOutput.innerHTML = futureWeatherOutputText;
     })
+    // if city is spelled wrong or nothing is inputed display error message
     .catch(error => {
       console.error('Error getting weather data:', error);
       weatherOutput.textContent = 'Error getting weather data';
