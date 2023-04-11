@@ -8,11 +8,22 @@
   <title>Weather teller</title>
 </head>
   <body>
-    <label for="cityInput">Enter city name:</label>
-    <input type="text" id="cityInput" name="cityInput">
-    <button id="getWeatherBtn">Get Weather</button>
-    <div id="weatherOutput"></div>
-    <div id="futureWeatherOutput"></div>
+    <header>
+      <h1> Weather Dashboard </h1>
+    </header>
+  <div id = "cityInputText">
+      <label for="cityInput">Enter city name:</label>
+      <input type="text" id="cityInput" name="cityInput">
+      <button id="getWeatherBtn">Get Weather</button>
+  </div> 
+    <section>
+      <h2 class = "todaysWeather"> Today's Weather </h2>
+      <div class = "todaysWeather" id="weatherOutput"></div>
+    </section>
+    <section>
+      <h3 class = "futureWeather"> Future forecast </h3>
+      <div id="futureWeatherOutput"class = "futureWeatherBackground"></div>
+    </section>
     <div id="searchHistory"></div>
     <script src = "Assets/script.js"></script>
   </body>

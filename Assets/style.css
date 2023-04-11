@@ -1,3 +1,15 @@
 *{
-    align-items: center;
+    text-align: center;
+    background-color: pink;
+}
+h1{
+    margin-top: 0;
+    color: white;
+    background-color: lightseagreen;
+}
+.todaysWeather{
+    background-color: lightblue;
+}
+#futureWeatherBackground{
+    background-color: aquamarine;
 }
