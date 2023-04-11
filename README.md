@@ -1,4 +1,4 @@
-# weather-api
+# Weather-api
 ## Technology Used
 
 | Technology Used         | Resource URL  |
@@ -10,7 +10,11 @@
 | Openweather API         | [https://openweathermap.org/](https://openweathermap.org/) |
 | 
 ## Description
-    Weather API used to tell the weather of the curent date and the next 5 days after. 
+    Weather API used to tell the weather of the curent date and the next 5 days after. it tells the celsius or farenheit, the humidity, wind speed, and even the forecast of that day either it being raining or cloudy or even sunny. openweathers API comes very useful adding it to this project.
+
+## Snippets
+this is a snippet of my search history area which i am very proud of! i love the way it looks
+   ![Search history](/Assets/Search%20history%20weather%20API.png)
 ## Author information
 
 ```MD
