@@ -29,3 +29,10 @@ this is a snippet of my search history area which i am very proud of! i love the
 ## Credits
 
 [Weather bootstrap](https://mdbootstrap.com/docs/standard/extended/weather/)
+
+[Using fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+
+
+## Deployed Application
+
+[Weather API](https://acquahlopid.github.io/weather-api/)
